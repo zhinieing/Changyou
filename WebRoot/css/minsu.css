@@ -1,0 +1,249 @@
+.headBox{
+	width:100%;
+
+	height:445px;
+	margin:0 auto;
+	/*border:1px solid gray;*/
+	position: relative;
+}
+
+
+.headBox img{
+	width:100%;
+	height:100%;
+}
+
+.searchBox{
+	width:1000px;
+	height:100px;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-500px;
+/*	background: blue;*/
+	border-radius: 7px;
+	display: flex;
+	/*background: rgba(73,86,224,0.5);*/
+	background: transparent;
+	border:1px solid gray;
+}
+
+.searchBox .addressBox{
+	height:100%;
+	width:200px;
+
+}
+
+.searchBox .IntimeBox{
+	height:100%;
+	width:190px;
+	margin-right: 10px;
+
+}
+
+.searchBox .OuttimeBox{
+	height:100%;
+	width:190px;
+	margin-left:10px;
+
+}
+
+.searchBox .keyBox{
+	height:100%;
+	width:200px;
+
+}
+
+.searchBox .searchBtn{
+	height:100%;
+	line-height: 100%;
+	width:200px;
+
+}
+
+.searchBox .name{
+	height:40px;
+	line-height:40px;
+
+}
+
+.searchBox .name span{
+	margin-left:10px;
+	font-size:0.9em;
+	border-bottom: 1px solid black;
+}
+
+.searchBox .put{
+	height:60px;
+	line-height:60px;
+}
+
+.searchBox .put input{
+	height:50px;
+	border:none;
+	font-size:1.3em;
+	background: transparent;
+}
+
+::placeholder{
+	color:#000;
+}
+.searchBox .put input:hover{
+	border-bottom: 2px solid rgba(167,188,215,1);
+}
+.addressBox input{
+	width:180px;
+	margin-left:10px;
+}
+
+.IntimeBox input{
+	width:170px;
+	margin-left:10px;
+}
+
+.OuttimeBox input{
+	width:170px;
+	margin-left:10px;
+}
+
+.keyBox input{
+	width:180px;
+	margin-left:10px;
+}
+
+.searchBtn button{
+	width:120px;
+	height:50px;
+	border-radius: 5px;
+	color:#fff;
+	text-align: center;
+	background: #58a;
+	margin-left:20px;
+	border:none;
+	margin-top:40px;
+	font-size:1.3em;
+}
+
+button:hover{
+	background: rgba(167,188,215,1);
+	cursor: pointer;
+}
+
+button:active{
+	border:1px solid #fff;
+}
+
+.hotelTable{
+	width:320px;
+	height:120px;
+	background: #fff;
+	border-radius: 5px;
+	position: absolute;
+	left:260px;
+	top:315px;
+	background: rgba(255,255,255,.7);
+	display: none;
+}
+
+
+.hotelTable ul{
+	list-style: none;
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.hotelTable ul li{
+	height:30px;
+	width: 80px;
+	text-align: center;
+	padding-top: 9px;
+}
+
+.hotelTable a{
+	font-size: .7em;
+	color:gray;
+}
+
+.hotelTable a:hover{
+	text-decoration: underline;
+}
+/*搜索栏结束*/
+
+
+.contentBox{
+	width:1200px;
+	margin:50px auto;
+}
+
+.contentBox h3{
+	font-size: 1.4em;
+	/*color:#58a;*/
+	font-weight: 200;
+	font-family:"黑体";
+	margin-left:10px;
+	color:#58a;
+	font-size: 24px;
+}
+
+.contentBox hr{
+	color:#58a;
+	background: #58a;
+	height:2px;
+}
+
+.hotel{
+	width:1200px;
+	margin:20px auto;
+}
+
+.hotel ul{
+	list-style: none;
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.hotel li{
+	width:370px;
+	margin:5px 10px;
+	height:350px;
+
+}
+
+.hotel li .imgBox{
+	width:100%;
+	height:250px;
+}
+
+.hotel li .imgBox img{
+	width:100%;
+	height:100%;
+}
+
+
+.txtBox .row1{
+	font-size: 1.1em;
+	/*font-weight: 700;*/
+	margin:5px 0 5px 20px;
+}
+
+.txtBox .row2{
+	font-size: .8em;
+	font-weight: 300;
+	margin:5px 0 5px 20px;
+	color:gray;
+}
+
+.Hprice{
+	margin-right: 2px;
+	color:orange;
+	font-weight: 800;
+}
+
+.Hname{
+	margin-left:10px;
+	color:#58a;
+}
+
+.Haddress{
+	margin-right: 10px;
+}

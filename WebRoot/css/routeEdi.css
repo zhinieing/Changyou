@@ -1,0 +1,76 @@
+#villigeMap{
+	width:1200px;
+	height:800px;
+	margin:20px auto;
+}
+
+.promptBox{
+	width:1200px;
+	height:100px;
+	line-height: 100px;
+	margin:20px auto 0 auto;
+	display: flex;
+}
+
+.promptBox h2{
+	font-size:2em;
+	color:#B9D3EE;
+	font-weight: 700;
+}
+.titleBox{
+	width:600px;
+	height:100px;
+}
+
+.stepBox{
+	width:600px;
+	height:100px;
+	display: flex;
+}
+.stepIcon{
+	width:40px;
+	height:40px;
+	margin:30px 10px;
+	background-color: gray;
+	border-radius: 50%;
+}
+
+.selected{
+	background: #58a;
+}
+.stepIcon span{
+	height:40px;
+	line-height: 40px;
+	display: block;
+	color:#fff;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+hr{
+	width:1200px;
+	margin:0 auto;
+	background: #B9D3EE;
+	color:#B9D3EE;
+	height:2px;
+}
+.stepText{
+	width:100px;
+	height:40px;
+	margin:30px 0px;
+}
+.stepText span{
+	height:40px;
+	line-height: 40px;
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+
+.footBox{
+	width:1200px;
+	/*height:100px;*/
+	margin:20px auto;
+	display: flex;
+}

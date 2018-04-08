@@ -1,0 +1,64 @@
+form{
+	border:1px solid gray;
+}
+ul{
+	list-style: none;
+}
+.titleBox{
+	width:1200px;
+	margin:0 auto;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+
+.titleBox h1{
+	font-size:26px;
+	color:#58a;
+	font-weight: 300;
+}
+
+.contentBox{
+	width:1200px;
+	margin:0 auto;
+	
+}
+
+.contentBox form{
+	width:600px;
+	height:500px;
+	margin:10px auto;
+}
+
+.contentBox form ul{
+	width:500px;
+	height:500px;
+	margin:20px auto;
+}
+
+.contentBox form li{
+	width:500px;
+	height:50px;
+	box-sizing:border-box;
+	line-height: 50px;
+	padding-left:30px;
+}
+
+.contentBox form li span{
+	margin-left:20px;
+}
+
+.contentBox form li button{
+	width:80px;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	background: #58a;
+	color: #fff;
+	border:none;
+}
+
+.contentBox form li button:hover{
+	background: #79b;
+	cursor:pointer;
+}

@@ -1,0 +1,39 @@
+/*评论*/
+.news_comment_title{
+	width:600px;
+	height:40px;
+	line-height: 40px;
+	display: flex;
+}
+.news_comment_title h3{
+	width:200px;
+	color:#58a;
+	font-size: 20px;
+	font-weight: 200;
+}
+.news_comment_point{
+	display: flex;
+}
+.news_comment_point .words{
+	margin-right:10px;
+	color:#58a;
+}
+.news_comment_p{
+	display: none;
+}
+.news_comment textarea{
+	margin-top:20px;
+	display: block;
+	width:500px;
+	height:100px;
+}
+
+.news_comment .subBtn{
+	margin-top:10px;
+	margin-left:200px;
+	padding: 5px 10px;
+	background: #58a;
+	color:#fff;
+	margin-bottom: 50px;
+	border:none;
+}

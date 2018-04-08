@@ -1,0 +1,102 @@
+.mainNav{
+	margin-left:120px;
+}
+
+.mainNav ul{
+	list-style:none;
+	line-height: 50px;
+}
+
+.mainNav li{
+	display: inline;
+	line-height: 50px;
+}
+
+.marinNav select{
+	width:200px;
+}
+
+.homeBody{
+	display: flex;
+}
+
+.leftBody{
+	width:300px;
+	margin:20px;
+
+}
+
+
+
+.rightBody{
+	flex:1;
+	margin:20px;
+
+}
+
+.rightImg{
+	height:280px;
+	width:900px;
+	margin-left:200px;
+}
+
+.rightList{
+	margin-left:200px;
+}
+
+.rightList h3{
+	margin:30px 0 20px 0;
+	font-size:30px;
+	font-family: "Microsoft YaHei";
+}
+.rightImg img{
+	height:100%;
+	width: 100%;
+}
+
+
+.homeItem{
+	display: flex;
+	height:200px;
+	margin: 30px 0 10px;
+}
+
+.homeImg{
+	height: 100%;
+	width: 200px;
+}
+
+.homeImg img{
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+
+}
+
+.homeIntro{
+	height: 100%;
+	width:450px;
+	margin:0 10px 0 30px;
+}
+
+.homeIntro h4{
+	font-size: 16px;
+}
+
+.homeIntro .intro1{
+	font-size:12px;
+	margin-top:10px; 
+}
+.homeIntro a{
+	text-decoration:underline;
+}
+.homeIntro .intro2{
+	font-size:12px;
+	margin-top:10px; 
+}
+
+.homePrice .price{
+	font-size: 26px;
+	font-weight: 800;
+	color: #F0AB38;
+}

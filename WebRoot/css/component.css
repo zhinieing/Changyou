@@ -1,0 +1,79 @@
+/*橡皮糖button样式*/
+
+.Jbutton {
+  background: #3498db;
+  width: 180px;
+  padding: 10px 0;
+ /* -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);*/
+  border-radius: 3px;
+  margin-left:20px;
+  margin-right:20px;
+}
+.Jbutton p {
+  font-family: 'Roboto';
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.Jbutton:hover {
+  cursor: pointer;
+}
+
+/*按钮hover样式*/
+
+.Hbutton {
+  color: #58a;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  width: 160px;
+  height:40px;
+  line-height: 40px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+  border:none;
+  background: #fff;
+}
+
+
+.Hbutton:hover {
+  text-decoration: none;
+}
+
+.btn-1 {
+  font-weight: 100;
+}
+.btn-1 svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.btn-1 rect {
+  fill: none;
+  stroke: #58a;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+}
+
+.btn-1:hover {
+  background: rgba(225, 51, 45, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.btn-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}

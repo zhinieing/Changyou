@@ -1,0 +1,205 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+/*div{
+	border:1px solid gray;
+}
+*/
+.titleBox1{
+	width:960px;
+	height:200px;
+	margin-left:100px;
+	margin-right:auto;
+	display: flex;
+}
+
+.imgBox{
+	margin:50px;
+	width:100px;
+	height:100px;
+}/*200px见方*/
+
+.imgBox img{
+	width:100%;
+	height:100%;
+}
+
+.titleDetailBox{
+	width:400px;
+	height:200px;
+	padding:50px 0;
+}
+
+.titleDetailBox h3{
+	font-size: 2em;
+	font-family:"MicrosoftYaHei";
+	font-weight: 400;
+	color:#696969;
+	margin:20px 0;
+}
+
+.titleDetailBox span{
+	font-size: .8em;
+	font-family:"MicrosoftYaHei";
+	font-weight: 200;
+	color:gray;
+}
+
+.goodBox{
+	width:210px;
+	height:60px;
+	margin:70px 0;
+	border:1px solid gray;
+	border-radius: 10px;
+	display: flex;
+}/*width:360px; height:200px;*/
+
+.goodItem{
+	width:90px;
+	height:40px;
+	margin:10px 0 10px 15px;
+	border-right:1px solid gray;
+	display: flex;
+}
+.goodItem .IconBox{
+	width:30px;
+	height:30px;
+	margin:5px 0 5px 0;
+}
+.goodItem .IconBox img:hover{
+	width:31px;
+	height:31px;
+}
+
+.goodOn{
+	display: none;
+}
+.goodOff{
+	display: block;
+}
+.collectionOn{
+	display: none;
+}
+.collectionOff{
+	display: block;
+}
+.goodItem .NumberBox{
+	width:30px;
+	height:30px;
+	line-height: 30px;
+	margin:5px 0 5px 15px;
+	font-size: 1.2em;
+	font-weight: 500;
+	color:#B0C4DE;
+}
+
+.collection{
+	border-right:0;
+}
+/*标题框结束*/
+.contentBox{
+	width:960px;
+	margin-left:100px;
+	margin-top:30px;
+	margin-right:auto;
+	display: flex;
+}
+
+.contentBox ul{
+	list-style:none;
+}
+.anchorWrap{
+	width:200px;
+	position: relative;
+}
+.anchor{
+	width:200px;
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+.anchor li{
+	margin-left:50px;
+	width:100px;
+	height:50px;
+	border:1px solid gray;
+	color:#9E9E9E;
+}
+.anchor a{
+	color:gray;
+}
+.anchor .selected a{
+	color:#58a;
+}
+
+.contentList{
+	width:610px;
+}
+
+.contentList .Item{
+	width:100%;
+	padding:0;
+}
+
+.contentList .mapItem{
+	height:450px;
+}
+
+#villigeMap{
+	width:610px;
+	height:450px;
+}
+
+.Item .titleBox{
+	line-height: 50px;
+	height:50px;
+	margin-left:40px;
+}
+.Item .titleBox h4{
+	font-size: 1.2em;
+	font-weight: 300;
+	color:gray;
+}
+
+.ItemContentBox{
+	width:100%;
+	/*border:1px solid gray;*/
+	background: #f0f0f0;
+}
+.Item .imgBox{
+	width:610px;
+	height:400px;
+	margin:0;
+}
+.Item .imgBox img{
+	width:100%;
+	height:100%;
+}
+
+.Item .txtBox{
+	padding-left:20px;
+	padding-right: 20px;
+	padding-top:20px;
+}
+
+.Item .footerBox{
+	height:20px;
+	line-height: 20px;
+	margin-top:10px;
+}
+.Item .footerBox span{
+	margin-left:40px;
+	font-size:.8em;
+}
+
+.Item .footerBox .time{
+	margin-left:300px;
+	color:gray;
+}
+
+.Item .footerBox .address{
+	color: 	#9F79EE;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.it.dao.CommentDao">
+      <insert id="CommentAdd" parameterType="cn.it.model.Comment">
+         insert into comment(referId,content,img,writer) values(#{referId},#{content},#{img},#{writer})
+      </insert>
+      <select id="CommentCount" resultType="int">  
+         SELECT COUNT(*) from comment where referId=#{referId} and del =1
+      </select> 
+      <select id="Commentrefer" resultType="int">  
+         SELECT referId from comment where commentId=#{commentId}
+      </select> 
+      <update id="CommentDelAdd" parameterType="cn.it.model.Comment">
+         update comment set del=#{del} where commentId=#{commentId}
+      </update>
+</mapper>

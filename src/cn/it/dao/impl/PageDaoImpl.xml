@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.it.dao.PageDao">
+     <!-- 分页SQL语句 -->  
+<select id="selectProductsByPage" parameterType="cn.it.model.Village" resultType="cn.it.model.Village">  
+  select * from village where villageSeason like #{villageSeason} and villageSpecial like #{villageSpecial} order by point desc limit #{startPos},#{pageSize}   
+</select> 
+<select id="selectTravelsByPage" parameterType="cn.it.model.Travels" resultType="cn.it.model.Travels">  
+  select * from travels limit #{startPos},#{pageSize}   
+</select>
+<select id="selectTravelstitleByPage1" parameterType="cn.it.model.Travels" resultType="cn.it.model.Travels">  
+  select * from travels where travelsTitle like #{travelsTitle} or IFNULL(#{travelsTitle},'')='' order by UpdateTime desc limit #{startPos},#{pageSize}
+</select>   
+<select id="selectTravelstitleByPage2" parameterType="cn.it.model.Travels" resultType="cn.it.model.Travels">  
+  select * from travels where travelsTitle like #{travelsTitle} or IFNULL(#{travelsTitle},'')='' order by travelsCount desc limit #{startPos},#{pageSize}
+</select>  
+<select id="selectTravelstitleByPage3" parameterType="cn.it.model.Travels" resultType="cn.it.model.Travels">  
+  select * from travels where travelsTitle like #{travelsTitle} or IFNULL(#{travelsTitle},'')='' order by travelsCollect desc limit #{startPos},#{pageSize}
+</select>  
+<select id="selectTravelstitleByPage4" parameterType="cn.it.model.Travels" resultType="cn.it.model.Travels">  
+  select * from travels where travelsTitle like #{travelsTitle} or IFNULL(#{travelsTitle},'')='' order by travelsComment desc limit #{startPos},#{pageSize}
+</select>  
+<select id="selectComment1ByPage" parameterType="cn.it.model.Comment" resultType="cn.it.model.Comment">  
+  select * from comment order by UpdateTime desc limit #{startPos},#{pageSize}   
+</select>
+<select id="selectRouteByPage" parameterType="cn.it.model.Route" resultType="cn.it.model.Route">  
+  select routeId,routeTitle,UpdateTime,routeWriter,del,routeImg,max(routeCount) from route group by routeTitle order by max(routeCount) desc limit #{startPos},#{pageSize}
+</select>
+<select id="selectCommentByPage" parameterType="cn.it.model.Comment" resultType="cn.it.model.Comment">  
+  select * from comment where referId=#{referId} order by UpdateTime desc limit #{startPos},#{pageSize}   
+</select>  
+<select id="selectind1ByPage" parameterType="cn.it.model.Village" resultType="cn.it.model.Village">  
+  select a.* from village a,collect b where a.villageId=b.classId and b.userId=#{userId} and b.classt=#{classt} limit #{startPos},#{pageSize}
+</select> 
+<select id="selectind2ByPage" parameterType="cn.it.model.Route" resultType="cn.it.model.Route">  
+  select a.* from route a,collect b where a.routeId=b.classId and b.userId=#{userId} and b.classt=#{classt} limit #{startPos},#{pageSize}
+</select> 
+<select id="selectind3ByPage" parameterType="cn.it.model.Travels" resultType="cn.it.model.Travels">  
+  select * from travels where travelsWriter=#{writer} limit #{startPos},#{pageSize}
+</select>
+<select id="selectind4ByPage" parameterType="cn.it.model.Route" resultType="cn.it.model.Route">  
+  select routeTitle from route where routeWriter=#{writer} group by routeTitle limit #{startPos},#{pageSize}
+</select>
+<select id="selectind5ByPage" parameterType="cn.it.model.Order" resultType="cn.it.model.Order">  
+  select * from order1 where useraId=#{useraId} limit #{startPos},#{pageSize}
+</select>
+
+<select id="selectind6ByPage" parameterType="cn.it.model.Order" resultType="cn.it.model.Order">  
+  select * from order1 where userbId=#{userbId} limit #{startPos},#{pageSize}
+</select>
+
+
+<select id="selectHotelByPage" parameterType="cn.it.model.Hotel" resultType="cn.it.model.Hotel">  
+  select * from hotel order by point desc limit #{startPos},#{pageSize}   
+</select>
+<select id="selectHotelSearchByPage" parameterType="cn.it.model.Hotel" resultType="cn.it.model.Hotel">
+  select * from hotel where theme like #{theme} and #{inDate} >= inDate and outDate >= #{outDate} and #{outDate} > #{inDate} and hotelName like #{hotelName} order by point desc limit #{startPos},#{pageSize}
+</select>
+<select id="selectSpotByPage" parameterType="cn.it.model.Spot" resultType="cn.it.model.Spot">
+  select * from spot order by point desc limit #{startPos},#{pageSize}
+</select> 
+<select id="selectSpotSearchByPage" parameterType="cn.it.model.Spot" resultType="cn.it.model.Spot">
+  select * from spot where theme like #{theme} and spotName like #{spotName} order by point desc limit #{startPos},#{pageSize}
+</select> 
+
+
+
+<!-- 取得记录的总数 -->  
+<select id="getind1Count" resultType="int">  
+  select count(*) from village a,collect b where a.villageId=b.classId and b.userId=#{userId} and b.classt=#{classt}
+</select> 
+<select id="getind2Count" resultType="int">  
+  select count(*) from route a,collect b where a.routeId=b.classId and b.userId=#{userId} and b.classt=#{classt}
+</select> 
+
+<select id="getind3Count" resultType="int">  
+  select count(*) from travels where travelsWriter=#{writer}
+</select> 
+
+<select id="getind4Count" resultType="int">  
+  select count(*) from route where routeWriter=#{writer}
+</select> 
+
+<select id="getind5Count" resultType="int">  
+  select count(*) from order1 where useraId=#{useraId}
+</select>
+
+<select id="getind6Count" resultType="int">  
+  select count(*) from order1 where userbId=#{userbId}
+</select>
+
+
+<select id="getProductsCount" resultType="int">  
+  SELECT COUNT(*) FROM village where villageSeason like #{villageSeason} and villageSpecial like #{villageSpecial}
+</select> 
+
+<select id="getTravelsCount" resultType="int">  
+  SELECT COUNT(*) FROM travels
+</select> 
+<select id="getTravelstitleCount" resultType="int">  
+  SELECT COUNT(*) FROM travels where travelsTitle like #{travelsTitle} or IFNULL(#{travelsTitle},'')=''
+</select>  
+<select id="getComment1Count" resultType="int">  
+  SELECT COUNT(*) FROM comment
+</select> 
+<select id="getRouteCount" resultType="int">  
+  SELECT COUNT(distinct routeTitle) from route
+</select> 
+<select id="getCommentCount" resultType="int">  
+  SELECT COUNT(*) FROM comment where referId=#{referId}
+</select> 
+
+<select id="getHotelCount" resultType="int">
+  SELECT COUNT(*) FROM hotel
+</select>
+<select id="getHotelSearchCount" resultType="int">
+  SELECT COUNT(*) FROM hotel where theme like #{theme} and #{inDate} >= inDate and outDate >= #{outDate} and #{outDate} > #{inDate} and hotelName like #{hotelName}
+</select>
+<select id="getSpotCount" resultType="int">
+  SELECT COUNT(*) FROM spot
+</select>
+<select id="getSpotSearchCount" resultType="int">
+  SELECT COUNT(*) FROM spot where theme like #{theme} and spotName like #{spotName}
+</select>
+
+</mapper>

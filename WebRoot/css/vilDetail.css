@@ -1,0 +1,406 @@
+.wraper{
+	width:1200px;
+	margin:10px auto;
+}
+
+/*h2{	color:#3722df;
+	font-weight: 200;
+	margin-left:50px;
+}
+*/
+.titleBox{
+	width:1200px;
+	height:160px;
+	margin:0 auto;
+	display: flex;
+	
+}
+
+
+
+.titleDetailBox{
+	width:600px;
+	height:100%;
+	padding:50px 0;
+}
+
+.titleDetailBox h3{
+	font-size: 2em;
+	font-family:"MicrosoftYaHei";
+	font-weight: 400;
+	color:#696969;
+	margin-left:50px;
+}
+
+.titleDetailBox span{
+	font-size: .8em;
+	font-family:"MicrosoftYaHei";
+	font-weight: 200;
+	color:gray;
+	margin-left:100px;
+}
+
+.goodBox{
+	width:210px;
+	height:60px;
+	margin:50px 0;
+	border:1px solid gray;
+	border-radius: 10px;
+	display: flex;
+}/*width:360px; height:200px;*/
+
+.goodItem{
+	width:90px;
+	height:40px;
+	margin:10px 0 10px 15px;
+	border-right:1px solid gray;
+	display: flex;
+}
+.goodItem .IconBox{
+	width:30px;
+	height:30px;
+	margin:5px 0 5px 0;
+}
+.goodItem .IconBox img:hover{
+	width:31px;
+	height:31px;
+}
+
+.goodOn{
+	display: none;
+}
+.goodOff{
+	display: block;
+}
+.collectionOn{
+	display: none;
+}
+.collectionOff{
+	display: block;
+}
+.goodItem .NumberBox{
+	width:30px;
+	height:30px;
+	line-height: 30px;
+	margin:5px 0 5px 15px;
+	font-size: 1.2em;
+	font-weight: 500;
+	color:#B0C4DE;
+}
+
+.collection{
+	border-right:0;
+}
+hr{
+	color:#3722df;
+	height:2px;
+	background: #3722df;
+	margin:10px 0 20px 0;
+}
+
+/*点赞部分*/
+.titleBox{
+	display: flex;
+}
+.good{
+	display: inline-block;
+	padding: 2px 10px;
+	background: #3722df;
+	margin-left:800px;
+	color:#fff;
+}
+
+.good:hover{
+	background: #fff;
+	color:#3722df;
+	cursor:pointer;
+}
+
+.goodNumber{
+	margin-left:20px;
+	margin-top:10px;
+	color:#3722df;
+}
+
+.havegood{
+	color:gray;
+}
+/*简介部分css*/
+.vilIntroWraper{
+	display: flex;
+}
+.vilIntroWraper .leftBox{
+	width:500px;
+	height:500px;
+	/*border: 1px solid gray;*/
+	/*background: #f0f0f0;*/
+}
+
+.vilIntroWraper .imgBox{
+	width:400px;
+	height: 300px;
+	margin:10px auto;
+}
+
+.vilIntroWraper .imgBox img{
+	width:400px;
+	height:300px;
+}
+
+.vilIntroWraper .introText{
+	width:400px;
+	height: 200px;
+	margin:10px auto;
+}
+
+.vilIntroWraper .rightBox{
+	margin-left:100px;
+	width:500px;
+	height:500px;
+	/*border: 1px solid gray;*/
+	background: #f0f0f0;
+
+}
+
+#villigeMap{
+	width:400px;
+	height:300px;
+	margin:10px auto;
+	border:1px solid gray;
+}
+/*简介部分css结束*/
+.vilDetailWraper{
+	margin-top:50px;
+}
+/*民宿部分css*/
+.homeStayWrapper{
+	margin-top:50px;
+}
+
+.homeItem{
+	display: flex;
+	height:150px;
+	margin: 10px 0 10px;
+	/*border:1px solid gray;*/
+	background: #f0f0f0;
+}
+
+.homeImg{
+	height: 100%;
+	width: 200px;
+
+}
+
+.homeImg img{
+	height: 100%;
+	width: 100%;
+}
+
+.homeIntro{
+	height: 100%;
+	width:550px;
+	margin:0 10px 0 30px;
+
+}
+
+.homeIntro h4{
+	font-size: 16px;
+	margin:10px 0 35px 0;
+}
+
+.homeIntro h4 a{
+	color:#58a;
+	font-size:18px;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.homeIntro .intro1{
+	font-size:12px;
+	margin-top:10px; 
+}
+.homeIntro a{
+	text-decoration:underline;
+}
+.homeIntro .intro2{
+	font-size:12px;
+}
+
+.homePrice{
+	height: 100%;
+	width:200px;
+	padding-top:50px;
+}
+.homePrice .price{
+	font-size: 26px;
+	font-weight: 800;
+	color: #F0AB38;
+	padding-top:10px;
+}
+
+.IsFull {
+	height:100%;
+	padding-top: 50px;
+}
+
+.IsFull span{
+	font-weight: 800;
+	color:gray;
+	font-size:1.2em;
+}
+
+/*民宿部分css结束*/
+
+/*游记部分css*/
+.strategyWraper{
+	margin-top:50px;
+}
+
+.strategyWraper th {  
+    font: bold 11px "trebuchet ms", verdana, arial, helvetica, sans-serif;  
+    color: #4f6b72;  
+    border-right: 1px solid #c1dad7;  
+    border-bottom: 1px solid #c1dad7;  
+    border-top: 1px solid #c1dad7;  
+    letter-spacing: 2px;  
+    text-transform: uppercase;  
+    text-align: left;  
+    padding: 6px 6px 6px 12px;  
+    background: #cae8ea url(images/bg_header.jpg) no-repeat;  
+}  
+
+.strategyWraper td {  
+    border-right: 1px solid #c1dad7;  
+    border-bottom: 1px solid #c1dad7;  
+    background: #fff;  
+    font-size:11px;  
+    padding: 6px 6px 6px 12px;  
+    color: #4f6b72;  
+}  
+
+/*游记部分结束*/
+
+.routeWraper{
+	margin-top:50px;
+}
+
+/*评论*/
+.homeCommentContent{
+	width:1200px;
+	margin:0 auto;
+}
+
+.homeCommentContent li{
+	width:1200px;
+	display: flex;
+	background: #F8F8FF;
+}
+
+.homeCommentContent li .leftBox{
+	width:300px;
+	border-top:2px solid #EBEBEB;;
+}
+
+.homeCommentContent li .leftBox .imgBox{
+	width:300px;
+	height: 100px;
+}
+
+.homeCommentContent li .leftBox .imgBox img{
+	width:80px;
+	height: 80px;
+	margin-left:110px;
+	margin-top:10px;
+}
+
+.homeCommentContent li .leftBox .nameBox{
+	width:300px;
+	height: 30px;
+	text-align: center;
+}
+
+.homeCommentContent li .rightBox{
+	width:900px;
+
+}
+
+.homeCommentContent li .rightBox .pointBox{
+	width:900px;
+	height: 30px;
+	line-height: 30px;
+	font-size:12px;
+	color:gray;
+	position: relative;
+	background:#EBEBEB;
+}
+.homeCommentContent li .rightBox .pointBox .point{
+	margin:0 3px;
+	color:orange;
+	font-size:14px;
+}
+
+.homeCommentContent li .rightBox .pointBox .inTime{
+	width:250px;
+	height: 30px;
+	line-height: 30px;
+	font-size:12px;
+	color:gray;
+	position: absolute;
+	right:0;
+	top:0;
+}
+.homeCommentContent li .rightBox .pointBox .inTime span{
+	margin:0 3px;
+}
+.homeCommentContent li .rightBox .contentBox{
+	height:100px;
+	width:850px;
+	padding-top:2px;
+}
+.homeCommentContent li .rightBox .footBox{
+	width:850px;
+	height: 30px;
+	line-height: 30px;
+	font-size:12px;
+	color:gray;
+
+}
+
+.news_comment_title{
+	width:600px;
+	height:40px;
+	line-height: 40px;
+	display: flex;
+}
+.news_comment_title h3{
+	width:200px;
+	color:#58a;
+	font-size: 20px;
+	font-weight: 200;
+}
+.news_comment_point{
+	display: flex;
+}
+.news_comment_point .words{
+	margin-right:10px;
+	color:#58a;
+}
+.news_comment_p{
+	display: none;
+}
+.news_comment textarea{
+	margin-top:20px;
+	display: block;
+	width:500px;
+	height:100px;
+}
+
+.news_comment .subBtn{
+	margin-top:10px;
+	margin-left:200px;
+	padding: 5px 10px;
+	background: #58a;
+	color:#fff;
+	margin-bottom: 50px;
+	border:none;
+}

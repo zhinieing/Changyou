@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.it.dao.SpotDao">
+      <select id="findAll" parameterType="cn.it.model.Ticket" resultType="cn.it.model.Ticket">
+         select * from ticket order by priceofticket
+      </select>
+      <select id="findMinPrice" parameterType="cn.it.model.Ticket" resultType="cn.it.model.Ticket">
+         select min(priceofticket) priceofticket,spotName from ticket group by spotName
+      </select>
+      <select id="findBySpotName" parameterType="cn.it.model.Spot" resultType="cn.it.model.Spot">
+         select * from spot where spotName = #{spotName}
+      </select>
+      <update id="SpotPointAdd" parameterType="cn.it.model.Spot">
+         update spot set point = #{point} where spotName = #{spotName}
+      </update>
+      <select id="findMaxPoint" resultType="cn.it.model.Spot">
+         select * from spot order by point desc limit 4
+      </select>
+</mapper>

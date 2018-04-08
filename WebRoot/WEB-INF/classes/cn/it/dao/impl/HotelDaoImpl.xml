@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.it.dao.HotelDao">
+      <select id="findMinPrice" parameterType="cn.it.model.Room" resultType="cn.it.model.Room">
+         select min(price) price,hotelName from room group by hotelName
+      </select>
+      <select id="findByHotelName" parameterType="cn.it.model.Hotel" resultType="cn.it.model.Hotel">
+         select * from hotel where hotelName = #{hotelName}
+      </select>
+      <select id="findRoomByHotelName" parameterType="cn.it.model.Room" resultType="cn.it.model.Room">
+         select * from room where hotelName = #{hotelName} order by price
+      </select>
+      <update id="HotelPointAdd" parameterType="cn.it.model.Hotel">
+         update hotel set point = #{point} where hotelName = #{hotelName}
+      </update>
+      <select id="findHotelBySpotName" parameterType="cn.it.model.Hotel" resultType="cn.it.model.Hotel">
+         select * from hotel where spotName like #{spotName}
+      </select>
+      <select id="findHotelByVillageTitle" parameterType="cn.it.model.Hotel" resultType="cn.it.model.Hotel">
+         select * from hotel where villageTitle like #{villageTitle}
+      </select>
+      
+      <select id="findHotelByUserId" parameterType="cn.it.model.Hotel" resultType="cn.it.model.Hotel">
+         select * from hotel where userId like #{userId}
+      </select>
+      
+      <insert id="HotelAdd" parameterType="cn.it.model.Hotel">
+         insert into hotel(hotelName,address,image,theme,pos,tel,introduce,photo,issue,villageTitle,userId) values(#{hotelName},#{address},#{image},#{theme},#{pos},#{tel},#{introduce},#{photo},#{issue},#{villageTitle},#{userId})
+      </insert>
+      
+      <insert id="RoomAdd" parameterType="cn.it.model.Room">
+         insert into room(hotelName,type,price,policy,wayofpayment) values(#{hotelName},#{type},#{price},#{policy},#{wayofpayment})
+      </insert>
+      
+      <delete id="deletebyId" parameterType="cn.it.model.Room">
+         delete from room where roomId = #{roomId}
+      </delete>
+</mapper>

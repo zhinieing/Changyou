@@ -1,0 +1,135 @@
+.wraper{
+	width:1200px;
+	margin:0 auto;
+}
+.wraper .picBox{
+	width:1200px;
+	height:300px;
+	margin:10px auto;
+	display: flex;
+}
+.wraper .picBox .picImgBox{
+	width:280px;
+	height:280px;
+	margin:10px;
+}
+.wraper .BigBox{
+	width:1200px;
+	margin:0 auto;
+	border:1px solid #EEE9E9;
+}
+
+.BigBox .infoBtn{
+	width:100px;
+	height: 40px;
+	margin-left:30px;
+	margin-top:10px;
+	text-align: center;
+	color:#fff;
+	background: #58a;
+	border:none;
+} 
+
+.BigBox button:hover{
+	cursor: pointer;
+	background: #79a;
+}
+
+.BigBox .c1{
+	width:400px;
+	height:40px;
+	line-height: 40px;
+	margin:10px 0 10px 10px;
+	display: flex;
+	 flex-wrap:wrap;
+}
+
+.BigBox .c1 select{
+	height:40px;
+}
+
+/*.BigBox .form1{
+	margin-left:100px;
+}*/
+
+.BigBox .c1Name{
+	width:100px;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	font-size:16px;
+	color:#58a;
+}
+
+.BigBox .c1Name label{
+	margin-left:5px;
+}
+
+.BigBox .c1 textarea{
+	width:300px;
+	height: 40px;
+	line-height: 40px;
+	font-size:18px;
+	border:none;
+	border-bottom: 1px solid #58a;
+	color:gray;
+}
+
+
+.BigBox .c1List{
+	width:220px;
+	display: flex;
+	 flex-wrap:wrap;
+}
+
+.BigBox .getStyle{
+	/*display: none;*/
+}
+
+.BigBox .c1List label{
+	display: block;
+	margin-right:10px;
+}
+.wraper .homeStayList{
+	width:1200px;
+	margin:10px auto;
+}
+
+
+.homeIntroName{
+	width:1200px;
+	margin:0 auto;
+	height:100px;
+	line-height: 100px;
+	color:#58a;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.homeIntroContent{
+	width:1200px;
+	margin:0 auto;
+	font-size:14px;
+	color:gray;
+}
+
+.homeIntroContent textarea{
+	background: #f0f0f0;
+	border-radius: 2px;
+	border:none;
+}
+
+.theBtn{
+	width:100px;
+	height:40px;
+	color:#fff;
+	background: #58a;
+	border:none;
+	border-radius: 2px;
+	margin:10px 0;
+}
+
+.theBtn:hover{
+	background: #79a;
+	cursor: pointer;
+}

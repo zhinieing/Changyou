@@ -1,0 +1,116 @@
+*{
+	margin:0;
+	padding: 0;
+}
+a{
+	text-decoration:none;
+}
+
+.myWrap{
+	width:100%;
+}
+
+.wraper{
+	width:1200px;
+	margin:0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+	.myWrap{
+	width:1200px
+}
+}
+nav{
+	width:100%;
+	height:60px;
+	background: #58a;
+	position:relative;
+}
+
+nav ul{
+	width:1200px;
+	margin:0 auto;
+	height:60px;
+	line-height: 60px;
+	list-style:none;
+	display: flex;
+}
+
+nav ul .logo{
+	width:300px;
+	height:60px;
+}
+
+nav ul .logo img{
+	width:200px;
+	height:50px;
+	margin:5px auto;
+}
+
+nav ul .logo h3{
+	font-size: 18px;
+	color:#fff;
+}
+
+
+nav ul .nav1{
+	width:80px;
+	height: 50px;
+	line-height: 50px;
+	margin:5px 0;
+	text-align: center;
+}
+
+nav ul .nav1 a{
+	font-size: 18px;
+	color:#f0f0f0;
+}
+
+nav ul .nav1:hover{
+	border-bottom: 2px solid #fff;
+}
+
+nav ul .block{
+	width:300px;
+}
+
+nav ul .nav2{
+	width:80px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+nav ul .nav2 a{
+	font-size: 16px;
+	color:#fff;
+}
+
+.footer{position: relative;width: 100%;bottom: 0;left: 0;z-index: 99;text-align: center;background: #9a9d9d;position: relative;padding-bottom: 15px;}
+.footer .opc_bg{position: absolute;top: 0;left: 0;width: 100%;height: 100%;_height: 91px;}
+.footer .foot{line-height: 20px;position: relative;margin: 0 auto;color:#b2b2b2;padding: 3px 0 6px;}
+.footer .links a{color:#b2b2b2;}
+.footer .safe_links{font-size: 0;line-height: 0;margin-top: 5px;}
+.footer .safe_links a{display: inline-block;+display: inline;+zoom: 1;color:#999;position: relative;width: 67px;font-size: 12px;line-height: 14px;height: 28px;padding: 5px 0 5px 40px;border: 1px solid #808080;position: relative;+zoom: 1;margin: 0 7px;}
+.footer .safe_links a img{position: absolute;top: 0;left: 0;width: 40px;height: 38px;}
+
+.footer .follow_box{padding-top: 45px;text-align: center;}
+.footer .txt_follow{font-size: 16px;color:#ffffff;line-height: 24px;}
+.footer .follow_list{font-size: 0;line-height: 0;margin-top: 18px;text-align: center;+zoom: 1;}
+.footer .follow_list a{display: inline-block;+display: inline;+zoom: 1;width: 50px;height: 51px;background-image: url('../img/follow_spr.png');margin: 0 10px;position: relative;}
+.footer .follow_list .code_box{position: absolute;width: 110px;height: 110px;padding: 10px;background: #fff;border-radius: 4px;left: -9999px;margin-left: -65px;bottom: 70px;opacity: 0;transition: opacity .2s;-webkit-transition: opacity .2s;}
+.footer .follow_list a:hover .code_box{left: 50%;opacity: 1;}
+.footer .follow_list .code_box .ic_arr{font-size: 0;line-height: 0;position: absolute;width: 0;height: 0;border-width: 8px;border-style: solid dashed dashed dashed;border-color: #fff transparent transparent transparent;left: 50%;margin-left: -8px;top: 100%;}
+.footer .follow_list .code_box img{display: block;height: 100%;height: 100%;}
+.footer .follow_list .wechat{background-position: 0 0;}
+.footer .follow_list .wechat:hover{background-position: 0 -72px;}
+.footer .follow_list .sina{background-position: -70px 0;}
+.footer .follow_list .sina:hover{background-position: -70px -72px;}
+.footer .follow_list .forum{background-position: -140px 0;}
+.footer .follow_list .forum:hover{background-position: -140px -72px;}
+.footer .follow_list .post{background-position: -210px 0;}
+.footer .follow_list .post:hover{background-position: -210px -72px;}
+.footer .main_links a{font-size: 18px;color:#fff;margin: 0 15px;} 
+.main_links{padding: 50px 0 25px;}
+.footer .foot,.footer .links a{color:#f6f6f6;}
+

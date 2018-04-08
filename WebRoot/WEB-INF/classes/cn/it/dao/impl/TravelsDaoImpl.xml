@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.it.dao.TravelsDao">
+      <insert id="TravelsAdd" parameterType="cn.it.model.Travels">
+         insert into travels(travelsClass,travelsPlace,travelsContent,travelsTitle,travelsWriter) values(#{travelsClass},#{travelsPlace},#{travelsContent},#{travelsTitle},#{travelsWriter})
+      </insert>
+      <update id="TravelsDelAdd" parameterType="cn.it.model.Travels">
+         update travels set del=#{del} where travelsId=#{travelsId}
+      </update>
+      <update id="TravelsCommentAdd" parameterType="cn.it.model.Travels">
+         update travels set travelsComment=#{travelsComment} where travelsId=#{travelsId}
+      </update>
+      <delete id="deletebyId" parameterType="cn.it.model.Travels">
+         delete from travels where travelsId = #{travelsId}
+      </delete>
+      <select id="findAll" parameterType="cn.it.model.Travels" resultType="cn.it.model.Travels">
+          select * from travels
+      </select> 
+      <select id="findAllbytitle" parameterType="cn.it.model.Travels" resultType="cn.it.model.Travels">
+          select * from travels where travelsTitle like #{travelsTitle} or IFNULL(#{travelsTitle},'')='' order by UpdateTime desc
+      </select> 
+      <select id="findbyId" parameterType="cn.it.model.Travels" resultType="cn.it.model.Travels">
+          select * from travels where travelsId = #{travelsId}
+      </select> 
+</mapper>

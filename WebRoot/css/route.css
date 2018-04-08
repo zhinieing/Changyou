@@ -1,0 +1,205 @@
+.wraper{
+	width:1200px;
+	margin:0 auto;
+}
+
+.wraper h3{
+	font-size: 24px;
+	color:#58a;
+	font-weight: 400;
+	margin-top:10px;
+}
+
+.wraper hr{
+	height:2px;
+	background: #58a;
+	margin:10px 0;
+}
+
+.container{
+	display: flex;
+}
+.leftBox{
+	width:200px;
+	height:300px;
+	padding:20px 20px;
+}
+
+.leftBox .btn{
+	padding: 6px 16px;
+	border: 1px solid #446d88;
+	background: #58a linear-gradient(#77a0bb, #58a);
+	border-radius: 4px;
+	border:none;
+	box-shadow: 0 1px 5px gray;
+	color: white;
+	text-shadow: 0 -1px 1px #335166;
+	font-size: 20px;
+	line-height: 30px;
+	margin:10px;
+}
+.leftBox .btn:hover{
+	background: #58a;
+}
+.btn a{
+	color:#fff;
+}
+
+.middleBox{
+	width:550px;
+	height:500px;
+	margin-left:50px;
+	display: flex;
+}
+
+#villigeMap{
+	width:500px;
+	height:100%;
+}
+
+.rightBox{
+	width:400px;
+	height:500px
+	border:2px solid #58a;
+	background: #58a;
+}
+
+.routeIntroduce{
+	width:300px;
+	height:400px;
+	margin:20px auto;
+	color:#fff;
+}
+
+.routeIntroduce h2{
+	margin-bottom:30px;
+}
+.userRoute ul{
+	list-style: none;
+}
+
+.userRoute .guideBox{
+	height:50px;
+	line-height: 50px;
+	width:1200px;
+	margin:0 auto;
+	display: flex;
+}
+
+.userRoute .guideBox h2{
+	width:1050px;
+	font-size: 24px;
+	color:#58a;
+	font-weight: 400;
+}
+
+.userRoute .guideBox .logIn a{
+	font-size: 20px;
+	color:#58a;
+	font-weight: 400;
+}
+
+#wing{
+	width:400px;
+	height:250px;
+	position: absolute;
+	left:50%;
+	/*top:80%;*/
+	margin-left:-200px;
+	display: none;
+	border:1px solid gray;
+	background: #fff;
+	z-index: 51;
+}
+
+#wing .wingWrap{
+	width:360px;
+	height:250px;
+	margin:0 20px;
+}
+#wing .wingTitle{
+	width:100%;
+	height:50px;
+	line-height: 50px;
+}
+#wing .tripTitle{
+	width:100%;
+	height:30px;
+	line-height: 30px;
+	color:gray;
+}
+#wing .wingInput{
+	width:100%;
+	height:50px;
+	line-height: 50px;
+}
+#wing .wingInput input{
+	width:100%;
+	height:30px;
+	line-height: 30px;
+}
+#wing .wingBtn{
+	margin-top:30px;
+	width:100%;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+}
+#wing .wingBtn button{
+	width:100px;
+	height: 40px;
+	border-radius: 4px;
+	background: #58a;
+	color:#fff;
+	border:none;
+}
+#wing .x{
+	width:30px;
+	height: 30px;
+	position: absolute;
+	right:10px;
+	top:10px;
+}
+
+#wing img{
+	width: 100%;
+	height: 100%;
+}
+#hidebg { position:absolute;left:0px;top:0px;
+      background-color:#000;
+      width:100%;  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+      filter:alpha(opacity=60);  /*设置透明度为60%*/
+      opacity:0.6;  /*非IE浏览器下设置透明度为60%*/
+      display:none; /* http://www.jb51.net */
+      z-index:29;
+    }
+.shareBtn{
+	padding: 6px 16px;
+	border: 1px solid #446d88;
+	background: #B4CDCD linear-gradient(#77a0bb, #B4CDCD);
+	border-radius: 4px;
+	box-shadow: 0 1px 5px gray;
+	color: white;
+	text-shadow: 0 -1px 1px #335166;
+	font-size: 20px;
+	line-height: 30px;
+	margin:10px;
+}
+
+.leftBox .btn:hover{
+	background: #B4CDCD;
+}
+
+.con{width:1200px;height:450px;background:#fff;margin:27px auto;padding-left:25px;padding-top:25px;}
+
+.con ul li{width:377px;height:225px;float:left;margin-right:15px;margin-bottom:15px;position:relative;overflow:hidden;cursor:pointer;}
+
+.txt{width:377px;height:45px;background:rgba(0,0,0,0.6);/*透明背景色，不透明其文字内容*/position:absolute;left:0;bottom:0;color:#fff;font-family:"微软雅黑";}
+
+.txt h3{font-size:20px;font-weight:100;height:45px;text-align:center;line-height:45px;}
+
+.txt h3 a{color:#fff;}
+
+.txt h3 a:hover{color:#58a;}
+
+.txt p{font-size:14px;text-align:center;}

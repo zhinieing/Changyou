@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.it.dao.UserDao">
+      <insert id="UserAdd" parameterType="cn.it.model.User">
+         insert into user(username,password,nickname) values(#{username},#{password},#{nickname})
+      </insert>
+      
+      <update id="UserimageAdd" parameterType="cn.it.model.User">
+         update user set image=#{image} where username=#{username}
+      </update>
+      
+      <update id="UserimforAdd" parameterType="cn.it.model.User">
+         update user set nickname=#{nickname},email=#{email},specials=#{specials} where username=#{username}
+      </update>
+      
+      <select id="findByUsernameAndPassWord" parameterType="cn.it.model.User" resultType="cn.it.model.User">
+          select * from user where username=#{username} and password=#{password}
+      </select> 
+      <select id="findByUsername" parameterType="cn.it.model.User" resultType="cn.it.model.User">
+          select * from user where username=#{username}
+      </select> 
+</mapper>

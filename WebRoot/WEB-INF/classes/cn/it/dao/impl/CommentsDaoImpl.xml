@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.it.dao.CommentsDao">
+      <insert id="commentsAdd" parameterType="cn.it.model.Comments">
+         insert into comments(commentsName,content,image,writer,point) values(#{commentsName},#{content},#{image},#{writer},#{point})
+      </insert>
+      <select id="findByCommentsName" parameterType="cn.it.model.Comments" resultType="cn.it.model.Comments">
+         select * from comments where commentsName = #{commentsName}
+      </select>
+      <select id="getCommentsNameCount" resultType="cn.it.model.Comments">
+         select count(*) total,commentsName from comments group by commentsName order by total desc
+      </select>
+      <select id="findAvgPoint" parameterType="cn.it.model.Comments" resultType="float">
+         select round(avg(point),1) from comments where commentsName = #{commentsName}
+      </select>
+</mapper>

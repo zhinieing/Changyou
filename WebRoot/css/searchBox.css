@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.searchBox ul{
+  list-style:none;
+  width:300px;
+}
+
+.searchBox ul li{
+  color: #F0AB38;
+  margin-top:5px;
+}
+.searchBox ul li .searchDateText{
+    margin:0 5px 0;
+}
+
+.searchBox ul li .searchDate{
+  width:130px;
+}
+
+.searchBox ul li .searchDateMoney{
+  width:50px;
+}
+
+.searchBtn{
+  width:100px;
+  height:30px;
+  margin: 10px 0 20px 0;
+  background: transparent;
+  border:#F0AB38 2px solid;
+  border-radius: 3px;
+  color:#fff;
+}
+
+ .box {
+  margin: auto;
+  width: 350px;
+  background: #78876E;
+  position: relative;
+  height:160px;
+/*  width: calc(100% - 60px);*/
+  padding: 60px 0 60px 50px;
+/*  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);*/
+}
+ .box::after {
+  top: 90px;
+  bottom: 0;
+  width: 61px;
+  content: '';
+  right: -60px;
+  background: #78876E;
+  position: absolute;
+}
+
+ time {
+  top: 0;
+  left: 100%;
+  width: 60px;
+  height: 60px;
+  color: #78876E;
+  font-size: 14px;
+  padding: 2px 0 0 10px;
+  text-align: left;
+  position: absolute;
+  text-transform: uppercase;
+}
+.searchBox time::before {
+  left: -1px;
+  width: 31px;
+  content: '';
+  height: 31px;
+  bottom: -30px;
+  position: absolute;
+  background: #78876E;
+}
+.searchBox time::after {
+  top: 100%;
+  left: 30px;
+  content: '';
+  position: absolute;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent #78876E #78876E transparent;
+}
+
+.box h1 {
+  color: #F0AB38;
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: .1em;
+}
+

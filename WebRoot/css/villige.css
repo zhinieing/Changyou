@@ -1,0 +1,131 @@
+.topBox{
+	width:1200px;
+	height:70px;
+	margin:20px auto;
+}
+
+.topBox h3{
+	font-size: 28px;
+	color:#58a;
+	margin:10px 0;
+	font-weight: 200;
+}
+.topBox hr{
+	background: #58a;
+	height:1px;
+	color:#58a;
+	background: #58a;
+}
+.middleBox{
+	width:1200px;
+	height:600px;
+	margin:20px auto;
+	display: flex;
+}
+.middleBox .leftBox{
+	width:400px;
+	height:600px;
+}
+
+.middleBox .leftBox .subjectTable{
+	width:300px;
+	height:260px;
+	background: #cde6c7;
+}
+.middleBox .leftBox .title{
+	width:300px;
+	height:60px;
+	line-height: 60px;
+	background: #1d953f;
+	display: flex;
+}
+
+.middleBox .leftBox .title img{
+	width:40px;
+	height:40px;
+	margin-left:25px;
+	margin-top:10px;
+}
+
+.middleBox .leftBox .title h3{
+	font-size:22px;
+	color:#fff;
+	margin-left:14px;
+	font-weight: 200;
+}
+
+.middleBox .leftBox .content{
+	width:300px;
+	height:200px;
+}
+
+.middleBox .leftBox .content ul{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	width:260px;
+	height:160px;
+	margin:20px;
+}
+.middleBox .leftBox .content ul li{
+	width:48px;
+	height:25px;
+	margin:2px;
+	text-align: center;
+}
+.middleBox .leftBox .content ul li a{
+	color:#000;
+	font-size:200;
+}
+
+.middleBox .leftBox .season{
+	margin-top:20px;
+	background: #d5c59f;
+}
+
+.middleBox .leftBox .season .title{
+	background: #69541b;
+}
+
+#villigeMap{
+	width:800px;
+	height:600px;
+}
+
+.villigeList{
+	width:1200px;
+	margin:50px auto;
+}
+
+.villigeList h3{
+	color:#58a;
+	font-size:20px;
+	font-weight: 200;
+}
+
+.villigeList hr{
+	color:#58a;
+	height:2px;
+	margin:10px 0;
+}
+
+.notSelect{
+	border:none;
+}
+
+.Selected{
+	border:1px solid #000;
+}
+.con{width:1200px;height:435px;background:#fff;margin:27px auto;padding-left:25px;padding-top:25px;}
+
+.con ul li{width:377px;height:225px;float:left;margin-right:15px;margin-bottom:15px;position:relative;overflow:hidden;cursor:pointer;}
+
+.txt{width:377px;height:45px;background:rgba(0,0,0,0.6);/*透明背景色，不透明其文字内容*/position:absolute;left:0;bottom:0;color:#fff;font-family:"微软雅黑";}
+
+.txt h3{font-size:20px;font-weight:100;height:45px;text-align:center;line-height:45px;}
+
+.txt h3 a{color:#fff;}
+
+.txt h3 a:hover{color:#58a;}
+
+.txt p{font-size:14px;text-align:center;}

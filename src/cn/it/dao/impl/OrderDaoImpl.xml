@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.it.dao.OrderDao">
+      <insert id="OrderAdd" useGeneratedKeys="true" keyProperty="orderId" parameterType="cn.it.model.Order">
+         insert into order1(orderName,address,theme,type,price,wayofpayment,number,total,useraId,userbId) values(#{orderName},#{address},#{theme},#{type},#{price},#{wayofpayment},#{number},#{total},#{useraId},#{userbId});
+      </insert>
+      <update id="OrderdelAdd" parameterType="cn.it.model.Order">
+         update order1 set del=#{del} where orderId=#{orderId}
+      </update>
+      <delete id="deletebyid" parameterType="cn.it.model.Order">
+         delete from order1 where orderId = #{orderId}
+      </delete>
+      <select id="findbyid" parameterType="cn.it.model.Order" resultType="cn.it.model.Order">
+          select * from order1 where orderId=#{orderId}
+      </select> 
+</mapper>

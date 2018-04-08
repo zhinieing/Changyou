@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.it.dao.RouteDao">
+      <insert id="RouteAdd" parameterType="cn.it.model.Route">
+         insert into route(routePass,routeTitle,routeWriter) values(#{routePass},#{routeTitle},#{routeWriter})
+      </insert>
+      <update id="RouteimgAdd" parameterType="cn.it.model.Route">
+         update route set routeImg=#{routeImg} where routeId=#{routeId}
+      </update>
+      <update id="RoutetAdd" parameterType="cn.it.model.Route">
+         update route set routeTitles=#{routeTitles},routePlace=#{routePlace},routeContent=#{routeContent} where routeId=#{routeId}
+      </update>
+      <update id="RoutecountAdd" parameterType="cn.it.model.Route">
+         update route set routeCount=#{routeCount} where routeId=#{routeId}
+      </update>
+      <update id="RoutecollectAdd" parameterType="cn.it.model.Route">
+         update route set routeCollect=#{routeCollect} where routeId=#{routeId}
+      </update>
+      <update id="RoutedelAdd" parameterType="cn.it.model.Route">
+         update route set del=#{del} where routeId=#{routeId}
+      </update>
+      <select id="findid" parameterType="cn.it.model.Route" resultType="int">
+          select routeId from route where routeTitle=#{routeTitle}
+      </select> 
+      <select id="findbyid" parameterType="cn.it.model.Route" resultType="cn.it.model.Route">
+          select * from route where routeId=#{routeId}
+      </select> 
+      <select id="findbytitle" parameterType="cn.it.model.Route" resultType="cn.it.model.Route">
+          select * from route where routeTitle=#{routeTitle}
+      </select>
+      <delete id="deletebyId" parameterType="cn.it.model.Route">
+         delete from route where routeTitle = #{routeTitle}
+      </delete>
+      
+</mapper>

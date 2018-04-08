@@ -1,0 +1,56 @@
+.wraper{
+	width:1200px;
+	margin:0 auto;
+}
+.homeStayList{
+	min-height: 600px;
+}
+table{
+	width:100%;
+}
+
+tr{
+	height:50px;
+	line-height: 50px;
+}
+
+.n1{
+	border:1px solid #f0f0f0;
+	background: #B9D3EE;
+	/*color:#fff;*/
+}
+
+.m1{
+	border:1px solid #f0f0f0;
+	background: #f0f0f0;
+	color:black;
+}
+
+td button{
+	color:black;
+	font-size: 16px;
+	background: transparent;
+	border:none;
+	/*color:#fff;*/
+}
+td button:hover{
+	cursor: pointer;
+}
+td input{
+	width:95%;
+	height:50px;
+	line-height: 50px;
+	box-sizing: padding-box;
+	font-size:20px;
+	padding-left:10px;
+	border:none;
+	background: #f0f0f0;
+}
+
+td input:focus{
+	outline:none;
+}
+
+td{
+	text-align: center;
+}

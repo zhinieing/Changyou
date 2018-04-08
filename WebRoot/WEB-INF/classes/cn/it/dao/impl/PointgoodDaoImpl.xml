@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.it.dao.PointgoodDao">
+      <insert id="PointgoodAdd" parameterType="cn.it.model.Pointgood">
+         insert into pointgood(userId,classId,classt) values(#{userId},#{classId},#{classt})
+      </insert>
+      <select id="getpointgoodcount" resultType="int">  
+         SELECT COUNT(*) FROM pointgood where classId=#{classId} and classt=#{classt}
+      </select> 
+      <select id="getpointgood" resultType="int">  
+         SELECT COUNT(*) FROM pointgood where classId=#{classId} and classt=#{classt} and userId=#{userId}
+      </select> 
+      <delete id="deletebyId" parameterType="cn.it.model.Pointgood">
+         delete from pointgood where classId = #{classId} and userId = #{userId} and classt = #{classt}
+      </delete>
+</mapper>
